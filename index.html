@@ -10,6 +10,7 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -29,17 +30,10 @@
 			<div class="wrap">
 				<a href="index.html"><img src="img/logo.png" alt="Fitness Cubed" class="logo"></img></a>
 				<ul class="nav navbar-nav">
-					<li><a href="story.html">Story</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="cubii.html">Cubii</a></li>
-					<li><a href="#" data-celery="mycubii">Pre-Order</a></li>
-					<li><a href="https://www.kickstarter.com/projects/1869110231/2121962159?token=5b100281" style="color: #6ac234" target="_blank">Support our Kickstarter</a></li>
-					<li><a href="press-awards.html" >Press & Awards</a></li>
-					<li><a href="http://fitness3ed.tumblr.com/" target="_blank">Blog</a></li>
-					<li><a href="faq.html">FAQS</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="https://www.facebook.com/MyFitnessCubed" style="padding: 0" target="_blank"><img src="img/fb-icon.png" alt="fb" class="header-icons"></a></li>
-					<li><a href="https://twitter.com/FitnessCubed" style="padding: 0" target="_blank"><img src="img/twitter-icon.png" alt="twitter" class="header-icons" style="top: 12px;"></a></li>
+					<li><a href="features.html">Features</a></li>
+					<li><a href="media.html">Media</a></li>
+					<li><a href="#" data-celery="mycubii" class="select" >Pre-Order</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
 
 				<select size"1"="" id="mobile-navigation" onchange="location = this.options[this.selectedIndex].value;">
@@ -63,26 +57,54 @@
 
 		<main class="main-home bg">
 			<div class="masthead">
-				<div class="row">
+<!-- 				<div class="row">
 					<div class="col-md-offset-2 col-md-8 col-lg-offset-6 col-lg-5 col-xs-12">
 						<iframe src="http://player.vimeo.com/video/98447652?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						<button type="button" class="btn btn-success text-white"><a class="no-hover text-white" href="https://www.kickstarter.com/projects/1869110231/2121962159?token=5b100281" target="_blank">Support our Kickstarter</a></button>
 					</div>
+				</div> -->
+
+				<div id="homepage-slider" class="owl-carousel owl-theme">
+
+					<div class="item item-first">
+						<section>
+							<h1>Special Holiday Promo</h1>
+							<p>Buy 1 Cubii, Get another for a friend at 20% off with code "cubii-promo"</p>
+							<button type="button" class="btn btn-warning text-white"><a class="no-hover text-white" href="" target="_blank">GET OFFER NOW</a></button>
+						</section>
+						<p class="disclaimer">*Offer until Jan 7th, 2015</p>
+					</div>
+
+					<div class="item item-second">
+						<img src="img/homeslider2.jpg">
+						<section>
+							<h1>Cubii</h1>
+							<p>Spend time on what truly matters</p>
+							<button type="button" class="btn btn-warning text-white"><a class="no-hover text-white" href="" target="_blank">PRE-ORDER</a></button>
+						</section>
+					</div>
+
+					<div class="item"><img src="assets/fullimage2.jpg" alt="GTA V">
+						<img src="img/homeslider3.jpg">
+					</div>
+
+					<div>
+						<img src="img/homeslider4.jpg">
+					</div>
+
+				</div>
+
+
 				</div>
 			</div>
 
 			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
-<!--  				<form action="http://fitnesscubed.us8.list-manage1.com/subscribe/post?u=1d6ade6a39256698525c04a4f&amp;id=6876b46401" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<form action="http://fitnesscubed.us8.list-manage1.com/subscribe/post?u=1d6ade6a39256698525c04a4f&amp;id=6876b46401" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-			    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
-				</form> -->
-				<a href="contact.html" class="btn btn-info" id="wufoo-btn" style="	margin-bottom: 20px;">Subscribe to our Mailing List</a>
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
+				</form>
 			</div>
-
-<!-- 			<div id="wufoo-zgouhyh01vexlz" class="ta-center">
-				<p>Fill out my <a href="https://fitnesscubed.wufoo.com/forms/zgouhyh01vexlz">online form</a>.<p>
-			</div> -->
 
 			<!-- End mc_embed_signup -->
 
@@ -107,11 +129,12 @@
 		</footer>
 	</div>
 
-
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://www.trycelery.com/js/celery.js">﻿</script>
 	<script type="text/javascript" src="js/animations.js"></script>
 	<script src="js/lightbox.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
 
 </body>
 

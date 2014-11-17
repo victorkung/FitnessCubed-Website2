@@ -16,5 +16,20 @@ $(document).ready(function(){
 	$('#robert').tooltip({'placement': 'bottom'});
 	$('#john').tooltip({'placement': 'bottom'});
 
+	// Owl Slider
+	$("#homepage-slider").owlCarousel({
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true
+
+		// "singleItem:true" is a shortcut for:
+		// items : 1, 
+		// itemsDesktop : false,
+		// itemsDesktopSmall : false,
+		// itemsTablet: false,
+		// itemsMobile : false
+	 });
+
+
 });
 

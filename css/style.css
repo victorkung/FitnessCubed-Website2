@@ -26,8 +26,9 @@ h1, h2, h3, h4, h5, h6{
 
 
 /* UTILITIES */
-.active{
+a.select {
 	top: 8px;
+	color: #6ac234 !important;
 	border: 1px solid #6ac234;
 	padding: 8px 15px 6px 15px !important;
 }
@@ -246,31 +247,87 @@ main{
 	width: 100%;
 }
 
-.main-home{
-	padding-bottom: 25px;
-}
 
 .masthead{
 	width: 100%;
-	height: 600px;
+	height: 480px;
 	text-align: center;
-	background-color: #f8f8f8;
-	background-image: url('../img/masthead-2.jpg');
-	background-size: cover;
+	background-color: grey;
 }
 
-.masthead iframe, .masthead button{
+#homepage-slider {
+	width: 100%;
+	height: 480px;
+	overflow: hidden;
+}
+
+#homepage-slider p {
+	font-size: 25px;
+	line-height: 35px;
+}
+
+#homepage-slider h1 {
+	margin-top: 0px;
+	font-size: 50px;
+}
+
+#homepage-slider .item-first {
+	width: 100%;
+	height: 480px;
+	background-color: #950014;
+}
+
+#homepage-slider .item-first section {
 	position: relative;
+	top: 100px;
 }
 
-.masthead iframe{
-	top: 75px;
-	width: 275px;
-	height: 180px;
+#homepage-slider .item-first h1 {
+	color: white;
+	padding-bottom: 25px;
 }
+
+#homepage-slider .item-first p {
+	color: white;
+	width: 750px;
+	margin: auto;
+}
+
+.masthead .owl-controls {
+	position: absolute;
+	top: 400px;
+	width: 100%;
+}
+
+.disclaimer {
+	position: absolute;
+	right: 100px;
+	bottom: 42px;
+	width: 250px !important;
+	font-size: 16px !important;
+	font-style: italic;
+}
+
+#homepage-slider .item-second section {
+	position: absolute;
+	top: 140px;
+	left: 125px;
+	text-align: left;
+}
+
+#homepage-slider .item-second button {
+	left: 115px;
+}
+
+#homepage-slider .item-second h1,  #homepage-slider .item-second p {
+	color: black;
+}
+
 
 .masthead button{
-	top: 125px;
+	position: relative;
+	top: 45px;
+	font-size: 20px;
 }
 
 #mc_embed_signup{
