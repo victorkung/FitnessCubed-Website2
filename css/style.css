@@ -323,6 +323,41 @@ main{
 	color: black;
 }
 
+#homepage-slider .item-third section {
+	float:right; 
+	width: 430px; 
+	height: 480px;
+	background-color: #f0ad4e;
+}
+
+#homepage-slider .item-third h1 {
+	position: relative;
+	top: 75px;
+	color: white;
+	font-size: 40px;
+	text-align: left;
+	padding: 25px 30px 60px 30px;
+}
+
+#homepage-slider .item-fourth section {
+	width: 100%;
+	height: 55px;
+	background-color: #3496f2;
+	position: absolute;
+	top: 325px;
+}
+
+#homepage-slider .item-fourth p{
+	padding-top: 12px;
+	text-align: center;
+	color: white;
+	font-size: 22px;
+}
+
+#homepage-slider .item-fourth a {
+	text-decoration: underline;
+	color: white;
+}
 
 .masthead button{
 	position: relative;
