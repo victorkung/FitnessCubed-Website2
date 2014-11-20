@@ -185,8 +185,14 @@ a.select {
 	margin: auto;
 	max-width: 1200px;
 	width: 100%;
-	height: 60px;
-	text-align: center;
+}
+
+.social-wrap {
+	position: relative;
+	top: 25px;
+	margin: auto;
+	width: 100%;
+	max-width: 830px;
 }
 
 .navbar{
@@ -325,7 +331,7 @@ main{
 
 #homepage-slider .item-third section {
 	float:right; 
-	width: 430px; 
+	width: 428px; 
 	height: 480px;
 	background-color: #f0ad4e;
 }
@@ -365,17 +371,38 @@ main{
 	font-size: 20px;
 }
 
-#mc_embed_signup{
-	width: 100%;
-	margin-top: 50px;
-	margin-bottom: 30px;
-	text-align: center;
+
+.social-wrap p {
+	font-weight: bold;
+}
+
+#mc_embed_signup, .social-media, .blog {
+	float: left;
+	height: 90px;
+	text-align: left;
+}
+
+#mc_embed_signup, .social-media{
+	border-right: 1px solid #888;
+}
+
+.social-media, .blog {
+	margin-left: 45px;
+}
+
+#mc_embed_signup {
+	width: 285px;
+}
+
+#mc_embed_signup strong {
+	color: #C2221B;
+	font-size: 20px;
 }
 
 .email{
-	height: 45px;
-	width: 285px;
-	padding: 10px 20px;
+	height: 35px;
+	width: 230px;
+	padding: 0 15px;
 	font-size: 15px;
 	background-color: #fff;
 	border: 1px solid #aaa;
@@ -384,25 +411,13 @@ main{
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 
-input[type ="submit"], #wufoo-btn{
+input[type ="submit"] {
 	position: relative;
-	right: 7px;
-	padding: 11px 15px 10px;
-	font-size: 15px;
-	text-transform: uppercase;
-}
-
-#wufoo-btn{
-	position: relative;
-	right: 7px;
-	padding: 11px 15px 10px;
-	font-size: 16px;
-	text-transform: uppercase;
-}
-
-#wufoo-btn:hover{
-	color: white !important;
-	text-decoration: none !important;
+	font-size: 14px;
+	border: 0;
+	border-radius: 50%;
+	padding: 0px 6px;
+	right: 35px;
 }
 
 ::-webkit-input-placeholder {
@@ -421,11 +436,70 @@ input[type ="submit"], #wufoo-btn{
 	font-style: italic;
 }
 
+.social-media {
+	width: 220px;
+}
+
+.social-media img, .blog img {
+	display: inline;
+	float: left;
+	width: 43px;
+}
+
 .homepage-press{
 	width: 200px;
 	margin-right: 25px;
 	margin-top: 17px;
 }
+
+ul.tick {
+	list-style-image: url(../img/checkmark.png);
+}
+
+
+#testimony-slider {
+	width: 100%;
+	height: 335px;
+	overflow: hidden;
+}
+
+#testimony-slider .item {
+	width: 100%;
+	height: 335px;
+	background-color: rgb(13, 163, 179);
+}
+
+/*#homepage-slider p {
+	font-size: 25px;
+	line-height: 35px;
+}
+
+#homepage-slider h1 {
+	margin-top: 0px;
+	font-size: 50px;
+}
+
+#homepage-slider .item-first {
+	width: 100%;
+	height: 480px;
+	background-color: #950014;
+}
+
+#homepage-slider .item-first section {
+	position: relative;
+	top: 100px;
+}
+
+#homepage-slider .item-first h1 {
+	color: white;
+	padding-bottom: 25px;
+}
+
+#homepage-slider .item-first p {
+	color: white;
+	width: 750px;
+	margin: auto;
+}*/
 
 
 /* Other Pages */
@@ -452,10 +526,14 @@ input[type ="submit"], #wufoo-btn{
   margin-left: 16.66666667%;
 }
 
-.main-content p{
-	font-size: 16px;
+.main-content p, .main-content ul {
+	font-size: 18px;
 	line-height: 26px;
-	/*letter-spacing: 0.5px;*/
+	margin-bottom: 25px;
+}
+
+.main-content li {
+	line-height: 45px;
 }
 
 .main-content h1{
