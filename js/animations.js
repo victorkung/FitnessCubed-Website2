@@ -11,7 +11,8 @@ $(document).ready(function(){
 	$("#homepage-slider").owlCarousel({
 		slideSpeed : 300,
 		paginationSpeed : 400,
-		singleItem:true
+		singleItem:true,
+		navigation : true
 		});
 
 	$("#testimony-slider").owlCarousel({
@@ -23,8 +24,10 @@ $(document).ready(function(){
 	$("#features-slider").owlCarousel({
 		slideSpeed : 300,
 		paginationSpeed : 400,
-		singleItem:true
+		singleItem:true,
+		navigation : true
 		});
+
 
 	$("#cubii-silver-select").click(function() {
 				$("#cubii-noir").fadeOut("slow", function() {
@@ -51,10 +54,7 @@ $(document).ready(function(){
 					$("#cubii-silver-select").removeClass('bold');
 			});
 
-	$('.video-lightbox').magnificPopup({ 
-		type: 'iframe'
-		// other options
-	});
+
 
 });
 

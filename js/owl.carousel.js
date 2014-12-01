@@ -409,12 +409,12 @@ if (typeof Object.create !== "function") {
 
             base.buttonPrev = $("<div/>", {
                 "class" : "owl-prev",
-                "html" : base.options.navigationText[0] || ""
+                // "html" : base.options.navigationText[0] || ""
             });
 
             base.buttonNext = $("<div/>", {
                 "class" : "owl-next",
-                "html" : base.options.navigationText[1] || ""
+                // "html" : base.options.navigationText[1] || ""
             });
 
             buttonsWrapper
