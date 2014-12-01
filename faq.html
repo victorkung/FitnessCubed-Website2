@@ -10,10 +10,9 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -23,45 +22,56 @@
 </head>
 
 
+
 <body>
 
 	<div class="container-fluid">
 		<nav class="row navbar navbar-default navbar-fixed-top" role="navigation">
 
-			<div class="wrap">
-				<a href="index.html"><img src="img/logo.png" alt="Fitness Cubed" class="logo"></img></a>
+			<div class="info-bar">
+				<div class="header-wrap">
+					<div class="phone-email pull-left">
+						<i class="fa fa-phone"></i> 00421 123 456&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> <a href="example@example.com">info@fitnesscubed.com</a> 
+					</div>
+					<div class="pull-right">	
+						<a href="https://www.facebook.com/MyFitnessCubed" target="_blank"><i class="fa fa-facebook"></i></a>
+						<span class="social-header-divider">&nbsp;|&nbsp;</span>
+						<a href="https://twitter.com/fitnesscubed" target="_blank"><i class="fa fa-twitter"></i></a>
+						<span class="social-header-divider">&nbsp;|&nbsp;</span>
+						<a href="http://www.pinterest.com/myfitnesscubed/" target="_blank"><i class="fa fa-pinterest"></i></a>
+						<span class="social-header-divider">&nbsp;|&nbsp;</span>
+						<a href="https://plus.google.com/101201204170818496727/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
+						<span class="social-header-divider">&nbsp;|&nbsp;</span>
+						<a href="https://www.tumblr.com/blog/fitness3ed" target="_blank"><i class="fa fa-tumblr"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-wrap">
+				<a href="index.html"><img src="img/logo.png" alt="Fitness Cubed" class="logo"></a>
 				<ul class="nav navbar-nav">
-					<li><a href="story.html">Story</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="cubii.html">Cubii</a></li>
-					<li><a href="#" data-celery="mycubii">Pre-Order</a></li>
-					<li><a href="https://www.kickstarter.com/projects/1869110231/2121962159?token=5b100281" style="color: #6ac234" target="_blank">Support our Kickstarter</a></li>
-					<li><a href="press-awards.html">Press & Awards</a></li>
-					<li><a href="http://fitness3ed.tumblr.com/" target="_blank">Blog</a></li>
-					<li><a class="active" href="faq.html">FAQS</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="features.html">About Cubii</a></li>
+					<li><a href="media.html">Buzz</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="pre-order.html"class="select pre-order" >Pre-Order</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a href="https://www.facebook.com/MyFitnessCubed" style="padding: 0" target="_blank"><img src="img/fb-icon.png" alt="fb" class="header-icons"></a></li>
-					<li><a href="https://twitter.com/FitnessCubed" style="padding: 0" target="_blank"><img src="img/twitter-icon.png" alt="twitter" class="header-icons" style="top: 12px;"></a></li>
 				</ul>
 
 				<select size"1"="" id="mobile-navigation" onchange="location = this.options[this.selectedIndex].value;">
 					<option selected="" value="">Navigation</option>
 					<option value="index.html">Home</option>
-					<option value="story.html">Story</option>
-					<option value="team.html">Team</option>
-					<option value="cubii.html">Cubii</option>
+					<option value="features.html">About Cubii</option>
+					<option value="media.html">In the News</option>
+					<option value="events.html">Upcoming Events</option>
 					<option value="pre-order.html">Pre-Order</option>
-					<option value="https://www.kickstarter.com/projects/1869110231/2121962159?token=5b100281">Support our Kickstarter</option>
-					<option value="press-awards.html">Press & Awards</option>
-					<option value="http://fitness3ed.tumblr.com/">Blog</option>
 					<option value="faq.html">FAQS</option>
 					<option value="contact.html">Contact</option>
-					<option value="https://www.facebook.com/MyFitnessCubed">Facebook</option>
-					<option value="https://twitter.com/FitnessCubed">Twitter</option>
 				</select>
 
 			</div>
 		</nav>
+
 
 		<main class="main-content">
 
@@ -70,46 +80,40 @@
 					<h1>FAQ</h1>
 
 					<h3 class="faq-question">
-						When is the Kickstarter campaign launching?
+						Where do I pre-order a Cubii? 
 						<span class="glyphicon glyphicon-chevron-down" ></span>
 					</h3>
-					<p class="faq-answer">The Kickstarter campaign will launch on June 18th!</p>
-
-					<h3 class="faq-question">
-						Where do I pre-order a Cubii?
-						<span class="glyphicon glyphicon-chevron-down" ></span>
-					</h3>
-					<p class="faq-answer">You can pre-order your cubii by clicking <a href="#" data-celery="mycubii" class="green">here.</a></p>
+					<p class="faq-answer">You can pre-order the Cubii by clicking <a href="pre-order.html">here.</a></p>
 
 					<h3 class="faq-question">
 						When will my order be shipped?
 						<span class="glyphicon glyphicon-chevron-down" ></span>
 					</h3>
-					<p class="faq-answer">Your order will be shipped on December 2014.</p>
+					<p class="faq-answer">Your order will be shipped on March 2015.</p>
 
 					<h3 class="faq-question">
 						When will I be charged?
 						<span class="glyphicon glyphicon-chevron-down" ></span>
 					</h3>
-					<p class="faq-answer">You will be charged when the order is shipped. You will receive an email notification and receipt.</p>
+					<p class="faq-answer">You will be charged when you place the order. You will receive an email notification and receipt.</p>
 
 					<h3 class="faq-question">
 						Which countries can Cubii be shipped to?
 						<span class="glyphicon glyphicon-chevron-down" ></span>
 					</h3>
-					<p class="faq-answer">The Cubii can be shipped to the USA, Canada, Mexico, Europe, Asia, and Australia</p>
+					<p class="faq-answer">The Cubii can be shipped to the USA, Canada, Mexico, Europe, Asia, and Australia.</p>
 
 					<h3 class="faq-question">
 						How can I order in bulk for my office?
 						<span class="glyphicon glyphicon-chevron-down" ></span>
 					</h3>
-					<p class="faq-answer">Please contact our COO <a href="mailto:ryotageo@gmail.com" class="green">Ryota Sekine</a> for bulk orders.</p>
+					<p class="faq-answer">Please contact our CMO <a href="mailto:shivani@fitnesscubed.com" class="green">Shivani Jain</a> for bulk orders.</p>
 
 					<h3 class="faq-question">
 						Who do I contact to discuss potential partnership opportunities?
 						<span class="glyphicon glyphicon-chevron-down" ></span>
 					</h3>
-					<p class="faq-answer">Please contact our CEO <a href="mailto:arnavdalmia@gmail.com" class="green">Arnav Dalmia </a> for partnership opportunities.</p>
+					<p class="faq-answer">Please contact our CEO <a href="mailto:arnav@fitnesscubed.com" class="green">Arnav Dalmia </a> for partnership opportunities.</p>
 
 					<h3 class="faq-question">
 						How many calories does Cubii burn?
@@ -130,15 +134,12 @@
 					<p class="faq-answer">The app will be available on iOS and Android. Please subscribe to our email list below to be the first to know when our app is released!</p>
 
 				</div>
-
 			</div>
-
-			<div class="row row-main bg">
 
 			<div class="row row-main bg contact">
 
 				<div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-8">
-					<h1>Still Have Questions?</h1>
+					<h1>Contact Us</h1>
 
 					<form role="form" class="contact-form margin-top-75" action="MAILTO:fitness3ed@gmail.com?subject=Contact%20Us" method="post" enctype="text/plain">
 						<div class="form-group">
@@ -159,44 +160,62 @@
 				</div>
 
 				<div class="col-md-5 right-column-xs-2 col-xs-8">
-					<p class="margin-top-150">For general inquiries, please email us at <a class="mail" href="mailto:fitness3ed@gmail.com">fitness3ed@gmail.com</a>. We'd love to hear from you!</p>
+					<p class="margin-top-175">For general inquiries, please email us at <a class="mail" href="mailto:info@fitnesscubed.com">info@fitnesscubed.com</a>. We'd love to hear from you!</p>
 					<!-- Begin MailChimp Signup Form -->
 					<div id="mc_embed_signup ta-left" class="margin-top-50">
-<!-- 						<form action="http://fitnesscubed.us8.list-manage1.com/subscribe/post?u=1d6ade6a39256698525c04a4f&amp;id=6876b46401" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<form action="http://fitnesscubed.us8.list-manage1.com/subscribe/post?u=1d6ade6a39256698525c04a4f&amp;id=6876b46401" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
 							<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
-						</form> -->
-						<a href="https://fitnesscubed.wufoo.com/forms/fitnesscubed-subscribers/" target="_blank" class="btn btn-info" id="wufoo-btn">Subscribe to our Mailing List</a>
+						</form>
+<!-- 						<a href="https://fitnesscubed.wufoo.com/forms/fitnesscubed-subscribers/" target="_blank" class="btn btn-info" id="wufoo-btn">Subscribe to our Mailing List</a> -->
 					</div>
 					<!--End mc_embed_signup-->
 				</div>
 
 				<div class="col-md-5 right-column-xs-2 col-xs-8 margin-top-50">
 					<figure>
-						<p class="is-bold">Investor Relations</p>
+						<p class="is-bold" style="font-size: 17px;">Investor Relations</p>
 						<p>Arnav Dalmia (CEO)</p>
-						<a class="mail" href="mailto:arnavdalmia@gmail.com">arnavdalmia@gmail.com</a>
+						<a class="mail" href="mailto:arnav@fitnesscubed.com">arnav@fitnesscubed.com</a>
 					</figure>
 
 					<figure>
-						<p class="is-bold">Sales and Distribution</p>
+						<p class="is-bold" style="font-size: 17px;">Operations & Logistics</p>
 						<p>Ryota Sekine (COO)</p>
-						<a class="mail" href="mailto:ryotageo@gmail.com">ryotageo@gmail.com</a>
+						<a class="mail" href="mailto:ryota@fitnesscubed.com">ryota@fitnesscubed.com</a>
 					</figure>
 
 					<figure>
-						<p class="is-bold">Press and Media</p>
+						<p class="is-bold" style="font-size: 17px;">Sales & Retail</p>
 						<p>Shivani Jain</p>
-						<a class="mail" href="mailto:shivanijain659@gmail.com">shivanijain659@gmail.com</a>
+						<a class="mail" href="mailto:shivani@fitnesscubed.com">shivani@fitnesscubed.com</a>
 					</figure>
 				</div>
 
 			</div>
 
+
 		</main>
 
-		<footer>
-			<p>Copyright 2014 FitnessCubed</p>
+		<footer class="row">
+			<div class="col-md-offset-2 col-md-3">
+				<ul>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="https://www.dropbox.com/sh/vcpgo0uxr0s6280/AABeDPJJKxXvmN_e4OdGGWZsa" target="_blank">Press Kit</a></li>
+					<li><a href="warranty.html">Warranty</a></li>
+					<li><a href="returns.html">Returns</a></li>
+					<li><a href="terms.html">Terms & Conditions</a></li>
+					<br>
+					<li>&copy; 2014 by FitnessCubed, Inc.</li>
+					<li><a href="mailto:info@fitnesscubed.com" style="text-decoration: underline;">info@fitnesscubed.com</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-offset-2 col-md-3">
+				<img src="img/fitnesscubed-full-logo.png" style="width: 250px;">
+			</div>
 		</footer>
 	</div>
 

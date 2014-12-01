@@ -294,7 +294,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: rgb(13, 63, 179) !important;
   text-decoration: underline;
 }
 a:focus {
@@ -3941,8 +3941,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 .navbar-default .navbar-brand {
   color: #777;
