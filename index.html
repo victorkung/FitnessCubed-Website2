@@ -25,14 +25,15 @@
 <body>
 
 	<div class="container-fluid main-content">
-		<nav class="row navbar navbar-default navbar-fixed-top" role="navigation">
+
+		<nav class="row navbar navbar-default navbar-fixed-top" id="regular-navigation" role="navigation">
 
 			<div class="info-bar">
 				<div class="header-wrap">
 					<div class="phone-email pull-left">
-						<i class="fa fa-phone"></i> 00421 123 456&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> <a href="example@example.com">info@fitnesscubed.com</a> 
+						<i class="fa fa-phone"></i> 773 255 2970&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> <a href="example@example.com">info@fitnesscubed.com</a> 
 					</div>
-					<div class="pull-right">	
+					<div class="pull-right">
 						<a href="https://www.facebook.com/MyFitnessCubed" target="_blank"><i class="fa fa-facebook"></i></a>
 						<span class="social-header-divider">&nbsp;|&nbsp;</span>
 						<a href="https://twitter.com/fitnesscubed" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -46,7 +47,7 @@
 				</div>
 			</div>
 
-			<div class="header-wrap">
+			<div class="header-wrap ">
 				<a href="index.html"><img src="img/logo.png" alt="Fitness Cubed" class="logo"></a>
 				<ul class="nav navbar-nav">
 					<li><a href="index.html" class="select">Home</a></li>
@@ -56,73 +57,75 @@
 					<li><a href="pre-order.html"class="select pre-order" >Pre-Order</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
-
-				<select size"1"="" id="mobile-navigation" onchange="location = this.options[this.selectedIndex].value;">
-					<option selected="" value="">Navigation</option>
-					<option value="index.html">Home</option>
-					<option value="features.html">About Cubii</option>
-					<option value="media.html">In the News</option>
-					<option value="events.html">Upcoming Events</option>
-					<option value="pre-order.html">Pre-Order</option>
-					<option value="faq.html">FAQS</option>
-					<option value="contact.html">Contact</option>
-				</select>
-
 			</div>
+			
 		</nav>
+
+
+<!--  Mobile Header -->
+		<nav class="row navbar navbar-default navbar-fixed-top" id="mobile-navigation" role="navigation">
+			<div class="mobile-wrap ">
+				<a href="index.html"><img src="img/logo.png" alt="Fitness Cubed" class="logo"></a>
+				<img src="img/hamburger1.png" alt="" id="hamburger">
+			</div>
+
+				<ul id="mobile-dropdown">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="features.html">About Cubii</a></li>
+					<li><a href="media.html">Buzz</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="pre-order.html">Pre-Order</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+		</nav>
+
 
 		<main class="main-home">
 			<div class="masthead">
-<!-- 				<div class="row">
-					<div class="col-md-offset-2 col-md-8 col-lg-offset-6 col-lg-5 col-xs-12">
-						<iframe src="http://player.vimeo.com/video/98447652?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						<button type="button" class="btn btn-success text-white"><a class="no-hover text-white" href="https://www.kickstarter.com/projects/1869110231/2121962159?token=5b100281" target="_blank">Support our Kickstarter</a></button>
-					</div>
-				</div> -->
 
 				<div id="homepage-slider" class="owl-carousel owl-theme">
 					<div class="item item-first">
-						<img src="img/homeslider1.jpg" width="100%">
 						<section>
-							<p>Twin Pack: 10% OFF  + Free US Shipping. Promo code “holidaytwin”</p>
-							<p>Friends Pack: 15% OFF + Free US Shipping. Promo code “holidayfriends”</p>
+							<p>Twin Pack: 20% OFF + Free US Shipping. Promo code: "holidaytwin"</p>
+							<p>Friends Pack: 25% OFF + Free US Shipping. Promo code: "holidayfriends"</p>
 							<button type="button" class="btn bg-orange text-white"><a class="no-hover text-white" href="pre-order.html" target="_blank">GET OFFER NOW</a></button>
-						</section>
+						</section>header
 					</div>
 
 					<div class="item item-second">
-						<img src="img/homeslider2.jpg">
 						<section>
 							<h1>Cubii</h1>
 							<p>Spend time on what truly matters</p>
-							<button type="button" class="btn bg-orange text-white"><a class="no-hover text-white" href="pre-order.html" target="_blank">PRE-ORDER</a></button>
+							<button type="button" class="btn bg-orange text-white" style="padding: 8px 17px 6px; font-size: 22px;"><a class="no-hover text-white" href="pre-order.html" target="_blank">PRE-ORDER</a></button>
 						</section>
 					</div>
 
-					<div class="item item-third">
-						<img src="img/homeslider3.jpg" style="width: 850px;">
-						<section class="bg-orange">
+					<div class="item item-third bg-orange">
+						<div class="img-wrapper"></div>
+						<section>
 							<h1>Designed for people who strive to be active at work</h1>
-							<button type="button" class="btn bg-blue text-white"><a class="no-hover text-white" href="features.html" target="_blank">LEARN MORE</a></button>
+							<button type="button" class="btn bg-blue text-white" style="top: 50px; padding: 8px 17px 6px; font-size: 22px;"><a class="no-hover text-white" href="features.html" target="_blank">LEARN MORE</a></button>
 						</section>
 					</div>
 
-					<div class="item item-fourth">
-						<img src="img/homeslider4.jpg" style="width: 600px; top: 35px; position: relative;">
-						<section class="bg-white" style="width: 542px; right: 50px; position: relative; top: 45px;">
+					<div class="item item-fourth bg" style="height: 480px;">
+						<section>
 							<h1 style="color: #737373">Track, Share & Compete</h1>
 							<button type="button" class="btn bg-blue text-white"><a class="no-hover text-white" href="features.html" target="_blank">LEARN MORE</a></button>
 						</section>
+						<img src="img/homeslider4">
 					</div>
 
-					<div class="item item-fifth">
-						<div class="row" style="padding-top: 65px">
-							<div class="col-md-offset-2 col-md-4">
-								<img src="img/wired-logo2.png" alt="" width="250" style="padding: 20px 0;">
-								<p style="font-size: 20px; line-height: 26px;">Cubii featured in WIRED Holiday Store December 11th-21st, New York City</p>
-							</div>
-							<div class="col-md-4" style="text-align:center;">
-								<iframe src="http://player.vimeo.com/video/108047083?title=0&amp;byline=0&amp;portrait=0" width="375" height="220" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<div class="item item-fifth bg-silver" style="height: 480px;">
+						<div class="row" style="padding-top: 40px">
+							<section class="col-xs-offset-2 col-xs-8 col-md-offset-2 col-md-4">
+								<img src="img/wired-logo.png" alt="" width="250">
+								<p>Cubii featured in WIRED Holiday Store December 11th-21st, New York City</p>
+								<button type="button" class="btn bg-orange text-white"><a class="no-hover text-white" href="events.html">LEARN MORE</a></button>
+							</section>
+							<div class="video-wrapper col-xs-offset-2 col-xs-8 col-md-offset-0 col-md-4">
+								<!-- <iframe src="img/wired-video.mp4"  width="445" height="246" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+								<video class="bg-white" poster="img/wiredstore.jpg" controls="controls" type="video/mp4" preload="true"><source src="img/wired-video.mp4" autoplay="false"></source></video>
 							</div>
 						</div>
 					</div>
@@ -132,14 +135,21 @@
 			</div>
 
 
-			<div class="row" style="height: 175px;">
-				<div id="mc_embed_signup">
-	 				<form action="http://fitnesscubed.us8.list-manage1.com/subscribe/post?u=1d6ade6a39256698525c04a4f&amp;id=6876b46401" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div class="row">
+				<div id="mc_embed_signup col-xs-offset-2 col-xs-8 col-md-offset-2 col-md-8">
+	 				<form action="//fitnesscubed.us8.list-manage.com/subscribe/post?u=1d6ade6a39256698525c04a4f&amp;id=6876b46401" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"  class="home-signup" class="validate" target="_blank" novalidate>
+						<input type="text" value="" name="FNAME" class="fname" id="mce-FNAME" placeholder="first name">
+						<input type="text" value="" name="LNAME" class="lname" id="mce-LNAME" placeholder="last name">
 						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
 				    	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn bg-blue">
 					</form>
 				</div>
 			</div>
+			<script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+
+
 
 			<div class="row bg-silver" style="padding: 50px 0 35px 0;">
 				<div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 ta-center">
@@ -151,7 +161,7 @@
 					<a href="http://bluesky.chicagotribune.com/originals/chi-shivani-jain-fitness-cubed-bsi-20140630,0,0.story" target="_blank"><img src="img/chicagotribune-logo-grey.png" class="homepage-press"></a>
 					<a href="http://www.wxyz.com/news/desk-elliptical-cubii-lets-you-bring-workout-to-work" target="_ target="_blank"blank"><img src="img/abc-logo-grey.png" class="homepage-press"></a>
 					<a href="http://www.huffingtonpost.com/2014/07/29/under-desk-elliptical-cubii_n_5630664.html" target="_ target="_blank"blank"><img src="img/huffpost-logo-grey.png"  class="homepage-press" style="top: 3px"></a>
-					<a href="http://www.chicagobusiness.com/article/20141004/ISSUE02/310049986/the-kickstarter-phenomenon-explained" target="_ target="_blank"blank"><img src="img/crains-logo-grey.png"   class="homepage-press"></a>
+					<!-- <a href="http://www.chicagobusiness.com/article/20141004/ISSUE02/310049986/the-kickstarter-phenomenon-explained" target="_ target="_blank"blank"><img src="img/crains-logo-grey.png"   class="homepage-press"></a> -->
 					</div>
 			</div>
 
@@ -160,23 +170,25 @@
 		</main>
 
 		<footer class="row bg-white">
-			<div class="col-md-offset-2 col-md-3">
+			<div class="col-md-offset-2 col-md-3 col-xs-offset-2 col-xs-8">
 				<ul>
 					<li><a href="aboutus.html">About Us</a></li>
 					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="careers.html">Careers</a></li>
 					<li><a href="https://www.dropbox.com/sh/vcpgo0uxr0s6280/AABeDPJJKxXvmN_e4OdGGWZsa" target="_blank">Press Kit</a></li>
 					<li><a href="warranty.html">Warranty</a></li>
 					<li><a href="returns.html">Returns</a></li>
 					<li><a href="terms.html">Terms & Conditions</a></li>
-					<br>
-					<li>&copy; 2014 by FitnessCubed, Inc.</li>
-					<li><a href="mailto:info@fitnesscubed.com" style="text-decoration: underline;">info@fitnesscubed.com</a></li>
+					
+					<div style="margin-top: 20px;">
+						<li>&copy; 2014 by FitnessCubed, Inc.</li>
+						<li><a href="mailto:info@fitnesscubed.com" style="text-decoration: underline;">info@fitnesscubed.com</a></li>
+					</div>
 				</ul>
 			</div>
 
-			<div class="col-md-offset-2 col-md-3" style="text-align:center;">
-				<img src="img/fitnesscubed-full-logo.png" style="width: 250px;">
+			<div class="col-md-offset-2 col-md-3 col-xs-offset-2 col-xs-8" style="text-align:center;">
+				<a href="index.html"><img src="img/fitnesscubed-full-logo.png" style="width: 250px;"></a>
 
 				<div id="mc_embed_signup">
 						<form action="http://fitnesscubed.us8.list-manage1.com/subscribe/post?u=1d6ade6a39256698525c04a4f&amp;id=6876b46401" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -194,6 +206,42 @@
 	<script type="text/javascript" src="js/animations.js"></script>
 	<script src="js/lightbox.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-50392452-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<!-- Start Visual Website Optimizer Asynchronous Code -->
+	<script type='text/javascript'>
+	var _vwo_code=(function(){
+	var account_id=108849,
+	settings_tolerance=2000,
+	library_tolerance=2500,
+	use_existing_jquery=false,
+	// DO NOT EDIT BELOW THIS LINE
+	f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+	</script>
+	<!-- End Visual Website Optimizer Asynchronous Code -->
+
+	<!-- Start of ReTargeter Tag -->
+	    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/json3/3.2.5/json3.min.js"></script>
+	    <script type="text/javascript">
+	        if( typeof _rt_cgi == "undefined" ){
+	        var _rt_cgi = 1213;
+	        var _rt_base_url = "https://lt.retargeter.com/";
+	        var _rt_js_base_url = "https://s3.amazonaws.com/V3-Assets/prod/client_super_tag/";
+	        var _rt_init_src = _rt_js_base_url+"init_super_tag.js";
+	        var _rt_refresh_st = false;
+	        var _rt_record = function(params){if(typeof document.getElementsByTagName("_rt_data")[0]=="undefined"){setTimeout(function(){_rt_record(params);},25);}};
+	        (function() {var scr = document.createElement("script");scr.src = _rt_init_src;document.getElementsByTagName("head")[0].appendChild(scr);})();}
+	    </script>
+	<!-- End of ReTargeter Tag -->
 
 </body>
 

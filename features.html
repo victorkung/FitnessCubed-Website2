@@ -24,14 +24,15 @@
 <body>
 
 	<div class="container-fluid">
-		<nav class="row navbar navbar-default navbar-fixed-top" role="navigation">
+
+		<nav class="row navbar navbar-default navbar-fixed-top" id="regular-navigation" role="navigation">
 
 			<div class="info-bar">
 				<div class="header-wrap">
 					<div class="phone-email pull-left">
-						<i class="fa fa-phone"></i> 00421 123 456&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> <a href="example@example.com">info@fitnesscubed.com</a> 
+						<i class="fa fa-phone"></i> 773 255 2970&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> <a href="example@example.com">info@fitnesscubed.com</a> 
 					</div>
-					<div class="pull-right">	
+					<div class="pull-right">
 						<a href="https://www.facebook.com/MyFitnessCubed" target="_blank"><i class="fa fa-facebook"></i></a>
 						<span class="social-header-divider">&nbsp;|&nbsp;</span>
 						<a href="https://twitter.com/fitnesscubed" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -45,7 +46,7 @@
 				</div>
 			</div>
 
-			<div class="header-wrap">
+			<div class="header-wrap ">
 				<a href="index.html"><img src="img/logo.png" alt="Fitness Cubed" class="logo"></a>
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
@@ -55,27 +56,56 @@
 					<li><a href="pre-order.html"class="select pre-order" >Pre-Order</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
+			</div>
+			
+		</nav>
 
-				<select size"1"="" id="mobile-navigation" onchange="location = this.options[this.selectedIndex].value;">
+
+<!--  Mobile Header -->
+		<nav class="row navbar navbar-default navbar-fixed-top" id="mobile-navigation" role="navigation">
+			<div class="mobile-wrap ">
+				<a href="index.html"><img src="img/logo.png" alt="Fitness Cubed" class="logo"></a>
+				<img src="img/hamburger1.png" alt="" id="hamburger">
+			</div>
+
+				<ul id="mobile-dropdown">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="features.html">About Cubii</a></li>
+					<li><a href="media.html">Buzz</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="pre-order.html">Pre-Order</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+		</nav>
+
+
+
+<!--  Mobile Header -->
+		<nav class="row navbar navbar-default navbar-fixed-top" id="mobile-navigation" role="navigation">
+			<div class="mobile-wrap ">
+				<a href="index.html"><img src="img/logo.png" alt="Fitness Cubed" class="logo"></a>
+
+				<select size"1"  onchange="location = this.options[this.selectedIndex].value;" id="mobile-dropdown">
 					<option selected="" value="">Navigation</option>
 					<option value="index.html">Home</option>
 					<option value="features.html">About Cubii</option>
-					<option value="media.html">In the News</option>
-					<option value="events.html">Upcoming Events</option>
+					<option value="media.html">Buzz</option>
+					<option value="events.html">Events</option>
 					<option value="pre-order.html">Pre-Order</option>
-					<option value="faq.html">FAQS</option>
 					<option value="contact.html">Contact</option>
 				</select>
-
 			</div>
 		</nav>
 
 
 		<main class="main-content">
 
-			<div class="row row-main">
-				<div class="col-md-offset-2 col-md-4  col-xs-offset-2 col-xs-8" style="padding-left: 0;">
-					<h1 class="margin-top-25">Cubii Under-Desk Elliptical</h1>
+			<div class="row row-padding bg">
+				<div class="col-md-offset-2 col-md-4  col-xs-offset-3 col-xs-6" style="padding-left: 0;">
+					<h1 >Cubii Under-Desk Elliptical</h1>  
+					
+					<!-- style="margin-top: 90px;" -->
+					
 					<p>Cubii helps you get basic exercise while you work so you have time for what truly matters at home</p>
 					<ul class="tick">
 						<li>Take multitasking to the next level</li>
@@ -83,13 +113,17 @@
 						<li>Share your progress with loved ones</li>
 					</ul>
 				</div>
+				
 				<div class="col-md-4 ta-center">
+				
+				<!-- style="margin-top: 60px;" -->
+				
 					<img src="img/candid.jpg" class="feature-img-right" style="width: 350px;">
 				</div>
 			</div>
 
-			<div class="row row-main" style="padding-bottom: 30px;;">
-				<div id="features-slider" class="owl-carousel owl-theme" style="height: 275px;">
+			<div class="row row-padding features-slider-div" style="padding-bottom: 30px; height: 425px;">
+				<div id="features-slider" class="owl-carousel owl-theme" style="height: 400px; padding-top: 30px;">
 					
 						<div class="item item-first">
 							<div class="features-wrap">
@@ -150,13 +184,83 @@
 					</div>
 			</div>
 
+		<div class="row row-padding features-static-div">
+				<div class="features-static">
+					
+						<div class="item item-first">
+							<div class="features-wrap">
+								<section>
+									<img src="img/compact-icon.png" alt="">
+									<p><strong>Compact</strong></p>
+									<p>Fit the Cubii right under your desk with no change of furniture.</p>
+								</section>
 
-			<div class="row row-main bg">
+								<section>
+									<img src="img/portable-icon.png" alt="">
+									<p><strong>Portable</strong></p>
+									<p>Handle makes it easy to carry the Cubii in your workplace.</p>
+								</section>
+								
+								<section>
+									<img src="img/design-icon.png" alt="">
+									<p><strong>Sleek Design</strong></p>
+									<p>You'll never feel ashamed of having an exercise machine at work.</p>
+								</section>
+
+								<section>
+									<img src="img/angle-icon.png" alt="">
+									<p><strong>Optimal Angles</strong></p>
+									<p>Your knees do not hit the desk, and your ankles do not get tired easily.</p>
+								</section>
+							</div>
+						</div>
+					</div>
+			</div>
+
+		<div class="row row-padding features-static-div" style="padding-top: 0;">
+				<div class="features-static">
+						<div class="item item-second">
+							<div class="features-wrap">
+								<section>
+									<img src="img/sustainable-icon.png" alt="">
+									<p><strong>Sustainable</strong></p>
+									<p>Charge your phone with your own exercise.</p>
+								</section>
+
+								<section>
+									<img src="img/resistance-icon.png" alt="">
+									<p><strong>Adjustable Resistance</strong></p>
+									<p>Keep your own pace by choosing the right exercise intensity.</p>
+								</section>
+								
+								<section>
+									<img src="img/tracking-icon.png" alt="">
+									<p><strong>Bluetooth Tracking</strong></p>
+									<p>From calories burned, to duration of exercise, track how much you improve.</p>
+								</section>
+
+								<section>
+									<img src="img/noise-icon.png" alt="">
+									<p><strong>Reduced Noise</strong></p>
+									<p>With Cubii's smooth fly wheels, never worry about distracting your coworkers.</p>
+								</section>
+							</div>
+						</div>
+
+					</div>
+			</div>
+
+
+
+			<div class="row row-padding bg-silver">
 				
 <!-- 				<div class="wrap"><h1 class="ta-center">Designed to fit your life</h1></div>
 				<br> -->
 				<div class="col-md-offset-2 col-md-4  col-xs-offset-2 col-xs-8">
-					<h1 style="margin-top: 175px;">Track and Compete</h1>
+					<h1>Track and Compete</h1>
+					
+					<!--  style="margin-top: 175px;" -->
+					
 					<p>
 						Keep track of your progress with our mobile app. Challenge your friends and celebrate your success with loved ones.
 					</p>
@@ -166,32 +270,44 @@
 				</div>
 			</div>
 
-			<div class="row row-main bg" style="height: 400px;">
+			<div class="row row-padding bg" style="height: 600px;">
 				<div class="col-md-offset-2 col-md-4 ta-center">
-					<img src="img/features-image3.jpg" class="feature-img-left margin-top-25">
+					<img src="img/features-image3.jpg" class="feature-img-left">
+					
+					<!--  style="margin-top: 110px;" -->
+					
 				</div>
 				<div class="col-md-4 col-xs-10 right-column-xs-1">
-					<h1 class="margin-top-50">Charge Your Phone</h1>
+					<h1>Charge Your Phone</h1>
+					
+					<!--  style="margin-top: 150px;" -->
+					
 					<p>
 						Charge your phone with your own exercise. Make every move count. Never worry again about running out of battery at the end of your workday.
 					</p>
 				</div>
 			</div>
 
-			<div class="row row-main bg" style="height: 400px">
+			<div class="row row-padding bg">
 				<div class="col-md-offset-2 col-md-4  col-xs-offset-2 col-xs-8">
-					<h1 class="margin-top-25">Designed to Fit Your Life</h1>
+					<h1>Designed to Fit Your Life</h1>
+					
+					<!--  style="margin-top: 125px" -->
+					
 					<p>
-						Foot angles optimized to prevent any distraction from regular work. Quit, non-intrusive design integrates seamlessly with your lifestyle.
+						Foot angles optimized to prevent any distraction from regular work. Quiet, non-intrusive design integrates seamlessly with your lifestyle.
 					</p>
 				</div>
 				<div class="col-md-4 ta-center">
 					<img src="img/features-image1.jpg" class="feature-img-right">
+					
+					<!--  style="margin-top: 90px;" -->
+					
 				</div>
 			</div>
 
-			<div class="row row-main">
-				<div class="col-md-offset-2 col-md-4 ta-center">
+			<div class="row row-padding">
+				<div class="col-md-offset-2 col-md-4 ta-center" style="margin-top: 10px;">
 					<img src="img/cubii-noir.jpg" id="cubii-noir" class="feature-img-left" style="width: 300px;">
 					<img src="img/cubii-silver.jpg" id="cubii-silver" class="feature-img-left"  style="width: 300px;">
 					<div class="cubii-selection">
@@ -205,8 +321,8 @@
 						</figure>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-10 right-column-xs-1">
-					<h1 class="margin-top-50">Cubii Specs</h1>
+				<div class="col-md-3 col-xs-offset-3 col-xs-6 col-md-3 col-md-offset-0">
+					<h1 style="margin-top: 115px;">Cubii Specs</h1>
 					<ul class="cubii-specs">
 						<li>Classic or Noir</li>
 						<li>24in (l) x 15in (w) x 10in (h)</li>
@@ -218,7 +334,7 @@
 				</div>
 			</div>
 
-			<div class="row row-main">
+<!-- 			<div class="row row-padding">
 				<div class="col-md-offset-2 col-md-4  col-xs-offset-2 col-xs-8">
 					<br><br>
 					<h1 class="margin-top-25">Stay connected to your exercise</h1>
@@ -232,33 +348,35 @@
 				<div class="col-md-4 ta-center">
 					<img src="img/app-slider1.jpg" class="feature-img-right" style="width: 250px">
 				</div>
-			</div>
+			</div> -->
 
 		</main>
 
-		<footer class="row bg">
-			<div class="col-md-offset-2 col-md-3">
+		<footer class="row bg-silver">
+			<div class="col-md-offset-2 col-md-3 col-xs-offset-2 col-xs-8">
 				<ul>
 					<li><a href="aboutus.html">About Us</a></li>
 					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="careers.html">Careers</a></li>
 					<li><a href="https://www.dropbox.com/sh/vcpgo0uxr0s6280/AABeDPJJKxXvmN_e4OdGGWZsa" target="_blank">Press Kit</a></li>
 					<li><a href="warranty.html">Warranty</a></li>
 					<li><a href="returns.html">Returns</a></li>
 					<li><a href="terms.html">Terms & Conditions</a></li>
-					<br>
-					<li>&copy; 2014 by FitnessCubed, Inc.</li>
-					<li><a href="mailto:info@fitnesscubed.com" style="text-decoration: underline;">info@fitnesscubed.com</a></li>
+					
+					<div style="margin-top: 20px;">
+						<li>&copy; 2014 by FitnessCubed, Inc.</li>
+						<li><a href="mailto:info@fitnesscubed.com" style="text-decoration: underline;">info@fitnesscubed.com</a></li>
+					</div>
 				</ul>
 			</div>
 
-			<div class="col-md-offset-2 col-md-3" style="text-align:center;">
-				<img src="img/fitnesscubed-full-logo.png" style="width: 250px;">
+			<div class="col-md-offset-2 col-md-3 col-xs-offset-2 col-xs-8" style="text-align:center;">
+				<a href="index.html"><img src="img/fitnesscubed-full-logo.png" style="width: 250px;"></a>
 
 				<div id="mc_embed_signup">
 						<form action="http://fitnesscubed.us8.list-manage1.com/subscribe/post?u=1d6ade6a39256698525c04a4f&amp;id=6876b46401" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-									<input type="submit" value=">" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger">
+									<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn bg-blue">
 					</form>
 				</div>
 
@@ -274,7 +392,42 @@
 	<script type="text/javascript" src="js/animations.js"></script>
 	<script src="js/lightbox.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+	  ga('create', 'UA-50392452-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<!-- Start Visual Website Optimizer Asynchronous Code -->
+	<script type='text/javascript'>
+	var _vwo_code=(function(){
+	var account_id=108849,
+	settings_tolerance=2000,
+	library_tolerance=2500,
+	use_existing_jquery=false,
+	// DO NOT EDIT BELOW THIS LINE
+	f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+	</script>
+	<!-- End Visual Website Optimizer Asynchronous Code -->
+
+	<!-- Start of ReTargeter Tag -->
+	    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/json3/3.2.5/json3.min.js"></script>
+	    <script type="text/javascript">
+	        if( typeof _rt_cgi == "undefined" ){
+	        var _rt_cgi = 1213;
+	        var _rt_base_url = "https://lt.retargeter.com/";
+	        var _rt_js_base_url = "https://s3.amazonaws.com/V3-Assets/prod/client_super_tag/";
+	        var _rt_init_src = _rt_js_base_url+"init_super_tag.js";
+	        var _rt_refresh_st = false;
+	        var _rt_record = function(params){if(typeof document.getElementsByTagName("_rt_data")[0]=="undefined"){setTimeout(function(){_rt_record(params);},25);}};
+	        (function() {var scr = document.createElement("script");scr.src = _rt_init_src;document.getElementsByTagName("head")[0].appendChild(scr);})();}
+	    </script>
+	<!-- End of ReTargeter Tag -->
 
 </body>
 

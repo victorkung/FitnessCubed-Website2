@@ -25,14 +25,15 @@
 <body>
 
 	<div class="container-fluid">
-		<nav class="row navbar navbar-default navbar-fixed-top" role="navigation">
+
+		<nav class="row navbar navbar-default navbar-fixed-top" id="regular-navigation" role="navigation">
 
 			<div class="info-bar">
 				<div class="header-wrap">
 					<div class="phone-email pull-left">
-						<i class="fa fa-phone"></i> 00421 123 456&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> <a href="example@example.com">info@fitnesscubed.com</a> 
+						<i class="fa fa-phone"></i> 773 255 2970&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> <a href="example@example.com">info@fitnesscubed.com</a> 
 					</div>
-					<div class="pull-right">	
+					<div class="pull-right">
 						<a href="https://www.facebook.com/MyFitnessCubed" target="_blank"><i class="fa fa-facebook"></i></a>
 						<span class="social-header-divider">&nbsp;|&nbsp;</span>
 						<a href="https://twitter.com/fitnesscubed" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -46,47 +47,55 @@
 				</div>
 			</div>
 
-			<div class="header-wrap">
+			<div class="header-wrap ">
 				<a href="index.html"><img src="img/logo.png" alt="Fitness Cubed" class="logo"></a>
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html" class="select">Home</a></li>
 					<li><a href="features.html">About Cubii</a></li>
 					<li><a href="media.html">Buzz</a></li>
 					<li><a href="events.html">Events</a></li>
 					<li><a href="pre-order.html"class="select pre-order" >Pre-Order</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
-
-				<select size"1"="" id="mobile-navigation" onchange="location = this.options[this.selectedIndex].value;">
-					<option selected="" value="">Navigation</option>
-					<option value="index.html">Home</option>
-					<option value="features.html">About Cubii</option>
-					<option value="media.html">In the News</option>
-					<option value="events.html">Upcoming Events</option>
-					<option value="pre-order.html">Pre-Order</option>
-					<option value="faq.html">FAQS</option>
-					<option value="contact.html">Contact</option>
-				</select>
-
 			</div>
+			
 		</nav>
 
 
-		<main class="main-content bg">
+<!--  Mobile Header -->
+		<nav class="row navbar navbar-default navbar-fixed-top" id="mobile-navigation" role="navigation">
+			<div class="mobile-wrap ">
+				<a href="index.html"><img src="img/logo.png" alt="Fitness Cubed" class="logo"></a>
+				<img src="img/hamburger1.png" alt="" id="hamburger">
+			</div>
 
-			<div class="row row-main" style="text-align: center; padding-top: 80px;">
-				<div class="col-md-offset-2 col-md-8">
+				<ul id="mobile-dropdown">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="features.html">About Cubii</a></li>
+					<li><a href="media.html">Buzz</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="pre-order.html">Pre-Order</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+		</nav>
+
+
+
+		<main class="main-content bg-silver">
+
+			<div class="row row-padding" style="text-align: center;">
+				<div class="col-md-offset-2 col-md-8 col-xs-offset-2 col-xs-8">
 					<h1>About Us</h1>
 					<br><br>
-					<img src="img/founders.jpg" width="700">
+					<img src="img/founders.jpg" width="100%">
 					<br><br>
-					<p style="width: 700px; margin: auto; text-align: left;">FitnessCubed is creating connected fitness products to seamlessly integrate basic exercise into your daily life. In our daily lives, we often miss out on the thing that matters most to stay healthy– exercise. We find ways to make exercise accessible so you can spend time on what truly matters. Our first product is the Cubii, an under-desk elliptical trainer that lets office dwellers get some basic exercise at their desk.</p>
+					<p class="about-us">FitnessCubed is creating connected fitness products to seamlessly integrate basic exercise into your daily life. In our daily lives, we often miss out on the thing that matters most to stay healthy– exercise. We find ways to make exercise accessible so you can spend time on what truly matters. Our first product is the Cubii, an under-desk elliptical trainer that lets office dwellers get some basic exercise at their desk.</p>
 			
 				</div>
 			</div>
 
 
-			<div class="row bg-silver" style="padding: 50px 0 35px 0;">
+			<div class="row bg-white" style="padding: 50px 0 35px 0;">
 				<div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 ta-center">
 					<img src="img/healthbox.png" class="homepage-press" style="top: 2px;"></a>
 					<img src="img/clinton.png" class="homepage-press" style="top: 8px; height: 75px"></a>
@@ -97,12 +106,12 @@
 
 		</main>
 
-		<footer class="row bg-white">
+		<footer class="row bg-silver">
 			<div class="col-md-offset-2 col-md-3">
 				<ul>
 					<li><a href="aboutus.html">About Us</a></li>
 					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="careers.html">Careers</a></li>
 					<li><a href="https://www.dropbox.com/sh/vcpgo0uxr0s6280/AABeDPJJKxXvmN_e4OdGGWZsa" target="_blank">Press Kit</a></li>
 					<li><a href="warranty.html">Warranty</a></li>
 					<li><a href="returns.html">Returns</a></li>
@@ -114,12 +123,12 @@
 			</div>
 
 			<div class="col-md-offset-2 col-md-3" style="text-align:center;">
-				<img src="img/fitnesscubed-full-logo.png" style="width: 250px;">
+				<a href="index.html"><img src="img/fitnesscubed-full-logo.png" style="width: 250px;"></a>
 
 				<div id="mc_embed_signup">
 						<form action="http://fitnesscubed.us8.list-manage1.com/subscribe/post?u=1d6ade6a39256698525c04a4f&amp;id=6876b46401" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-									<input type="submit" value=">" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger">
+									<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn bg-blue">
 					</form>
 				</div>
 

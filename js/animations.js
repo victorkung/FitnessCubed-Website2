@@ -6,26 +6,55 @@ $(document).ready(function(){
 		$( this ).children( 'span' ).toggleClass("glyphicon-chevron-down glyphicon-chevron-up");
 	});
 
+	// Hamburger Icon
+	$('#hamburger').mouseover( function () {
+		$(this).attr("src", "img/hamburger2.png");
+	});
+
+	$('#hamburger').mouseleave( function () {
+		$(this).attr("src", "img/hamburger1.png");
+	});
+
+	$('#hamburger').click( function () {
+		$('#mobile-dropdown').slideToggle();
+		if ( $('#mobile-dropdown').is(':visible')) {
+			$('#mobile-navigation').css('height', 'auto');
+		}
+		else if($('#test').is(':hidden')) {
+			$('#mobile-navigation').css('height', '75px');
+			console.log("poop");
+		}
+	});
 
 	// Owl Slider
 	$("#homepage-slider").owlCarousel({
 		slideSpeed : 300,
 		paginationSpeed : 400,
 		singleItem:true,
-		navigation : true
+		navigation : true,
+		// autoPlay: 8000
 		});
 
 	$("#testimony-slider").owlCarousel({
 		slideSpeed : 300,
 		paginationSpeed : 400,
-		singleItem:true
+		singleItem:true,
+		autoPlay: 8000
 		});
 
 	$("#features-slider").owlCarousel({
 		slideSpeed : 300,
 		paginationSpeed : 400,
 		singleItem:true,
-		navigation : true
+		navigation : true,
+		autoPlay: 8000
+		});
+
+	$("#cubii-slider").owlCarousel({
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true,
+		autoPlay: 8000
 		});
 
 
