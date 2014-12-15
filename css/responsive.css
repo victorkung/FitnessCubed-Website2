@@ -18,7 +18,7 @@
 	.contact-col2 { margin-top: 150px; }
 	#homepage-slider .item-fifth section { top: 90px; }
 	#homepage-slider .item-fifth .video-wrapper { top: 75px; }
-	#homepage-slider .item-fifth video { width: 440px; height: 246px;}
+	#homepage-slider .item-fifth iframe { width: 440px; height: 246px;}
 }
 
 @media screen and (max-width: 991px) {

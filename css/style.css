@@ -505,7 +505,7 @@ main{
 }
 
 #homepage-slider .item-fifth .video-wrapper { top: 35px; }
-#homepage-slider .item-fifth video { width: 300px; height: 200px;}
+#homepage-slider .item-fifth iframe { width: 300px; height: 200px;}
 
 #homepage-slider .item-fifth button {
 top: 15px; padding: 8px 17px 6px; font-size: 22px;
