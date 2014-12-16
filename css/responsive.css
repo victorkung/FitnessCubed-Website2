@@ -19,6 +19,8 @@
 	#homepage-slider .item-fifth section { top: 90px; }
 	#homepage-slider .item-fifth .video-wrapper { top: 75px; }
 	#homepage-slider .item-fifth iframe { width: 440px; height: 246px;}
+	.vertical-align2{ position: relative; padding-top: 75px; padding-bottom: 375px; }
+	.track-compete { top: 150px; }
 }
 
 @media screen and (max-width: 991px) {

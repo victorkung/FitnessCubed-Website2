@@ -301,6 +301,8 @@ h2, h3, h4, h5, h6{
 .navbar{
 	height: 65px;
 	margin-bottom: 0;
+	max-width: 1280px !important;
+	margin: auto !important;
 }
 
 nav ul {
@@ -374,6 +376,7 @@ footer input[type="submit"] {
 main{
 	position: relative;
 	width: 100%;
+	padding-top: 16px;
 }
 
 

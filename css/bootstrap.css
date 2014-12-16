@@ -759,6 +759,7 @@ pre code {
   padding: 0;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1280px;
 }
 .row {
   margin-right: -15px;
